@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>TO DO LIST</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="perfil">
+        <div id="fecha">Martes 20 de diciembre de 2022</div>
+        <div class="container_name">
+          <h1>Hola, 
+            <span id="nombre"></span>
+            <span id="span-name">
+              <input 
+                type="text"
+                id="input-name"
+                placeholder="Escribe tu nombre"
+              />
+              <i class="fa-sharp fa-solid fa-circle-check" id="add_name"></i>
+            </span>
+          </h1>
+        </div>
+
+        <p>Vamos a cumplir tus tareas</p>
+      </div>
+
+      <div class="agregar-tarea">
+        <input type="text" id="input-tarea" placeholder="agregar tarea">
+        <i id="add_tarea" class="fa-solid fa-circle-plus"></i>
+      </div>
+      <div class="seccion-tarea">
+        <h3>Tareas pendientes</h3>
+        <ul id="lista">
+          <li>
+            <i class="fa-regular fa-circle" data="realizado" id="0"></i>
+            <p class="texto_tarea">Tarea de ejemplo</p>
+            <i class="fa-solid fa-trash" data="eliminado" id="0"></i>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
